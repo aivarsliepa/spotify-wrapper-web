@@ -2,9 +2,11 @@ import { combineReducers, createStore } from "redux";
 
 import { authReducer } from "./auth/reducers";
 import { logIn } from "./auth/actions";
+import { songsReducer } from "./songs/reducers";
 
 const rootReducer = combineReducers({
-  auth: authReducer
+  auth: authReducer,
+  songs: songsReducer
 });
 
 export const store = createStore(rootReducer);

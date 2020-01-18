@@ -2,10 +2,10 @@ import React from "react";
 import { MapDispatchToProps, connect } from "react-redux";
 
 import { logIn } from "../../store/auth/actions";
+import { LOGIN_URL } from "../../api";
 
 const spotifyLogin = () => {
-  // TODO: make as env variable
-  window.location.href = "http://localhost:9000/auth/spotify";
+  window.location.href = LOGIN_URL;
 };
 
 interface DispatchProps {

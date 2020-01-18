@@ -1,5 +1,6 @@
-import { AuthState, AuthActionTypes, LOG_IN, LOG_OUT } from "./types";
 import { Reducer } from "redux";
+
+import { AuthState, AuthActionTypes, LOG_IN, LOG_OUT } from "./types";
 
 const initialState: AuthState = {
   jwt: "",
